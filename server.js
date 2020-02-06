@@ -1,3 +1,4 @@
+
 var express = require("express");
 var exphbs = require("express-handlebars");
 
@@ -33,3 +34,6 @@ app.get("/posts/new", function(rew, res) {
 });
 
 app.listen(3000);
+
+
+module.exports = app;
