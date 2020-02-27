@@ -18,7 +18,8 @@
 
 <div>
   <h2>comments</h2>
-{{#each post.comments}}
-  <p>{{this.content}}</p>
-{{/each}}
+  {{#each post.comments}}
+      <p>{{this.content}}</p>
+      <p class="text-right">{{this.author.username}}</p>
+  {{/each}}
 </div>
