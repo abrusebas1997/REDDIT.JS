@@ -29,7 +29,7 @@ var checkAuth = (req, res, next) => {
 
   next();
 };
-app.use(checkAuth);b
+app.use(checkAuth);
 // Set db
 require('dotenv').config();
 require('./data/reddit-db');
