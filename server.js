@@ -5,7 +5,6 @@ const expressValidator = require('express-validator');
 var cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 
-
 const app = express()
 const port = process.env.PORT
 
@@ -56,7 +55,7 @@ app.get('/posts/new', (req, res) => res.render('posts-new'));
 
 
 
-app.listen(port)
+app.listen(port, () => console.log('exxx ${port}!'))
 
 
 module.exports = app;
