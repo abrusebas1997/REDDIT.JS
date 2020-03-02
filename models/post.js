@@ -10,8 +10,10 @@ url: { type: String, required: true },
 summary: { type: String, required: true },
 subreddit: { type: String, required: false },
 comments: [{ type: Schema.Types.ObjectId, ref: 'Comment'}],
-author : { type: Schema.Types.ObjectId, ref: "User", required: true }
-
+author : { type: Schema.Types.ObjectId, ref: "User", required: true },
+upVotes : [{ type: Schema.Types.ObjectId, ref: "User"}],
+downVotes : [{ type: Schema.Types.ObjectId, ref: "User"}],
+voteScore : {type: Number}
 
 });
 

@@ -5,9 +5,13 @@ const expressValidator = require('express-validator');
 var cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 
-const app = express()
-const port = 3000
 
+const app = express()
+const port = process.env.PORT
+
+
+
+app.use(express.static('public'));
 // Use Body Parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -52,7 +56,7 @@ app.get('/posts/new', (req, res) => res.render('posts-new'));
 
 
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port)
 
 
 module.exports = app;
