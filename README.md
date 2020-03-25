@@ -2,4 +2,4 @@
 
 ## Deployment
 
-Project is deployed to https://dashboard.heroku.com/apps/redditsss
+Project is deployed to https://redditsss.herokuapp.com/
